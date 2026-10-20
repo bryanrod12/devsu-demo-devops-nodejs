@@ -54,7 +54,6 @@ Decisiones: imagen multi-stage basada en `node:18-alpine`, solo dependencias de 
 minikube start
 minikube addons enable ingress
 minikube addons enable metrics-server
-# cambia TU_USUARIO en k8s/deployment.yaml (o usa una imagen local con: minikube image load devsu-demo)
 kubectl apply -f k8s/namespace.yaml
 kubectl apply -f k8s/
 kubectl -n devsu-demo get pods
